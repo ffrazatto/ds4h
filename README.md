@@ -29,9 +29,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |Nome  | RA | Especialização|
 > |--|--|--|
 > | Felipe Frazatto  | 146001  | Física|
-> | João Pedro  | 227991   |Farmácia|
+> | João Pedro  | 123456  | XXX|
 > | Pedro Lelis  | 123456  | XXX|
-> | Renata Prôa  | 123456  | XXX|
+> | Renata Prôa  | 224637  | Matemática|
 
 
 # Descrição Resumida do Projeto
