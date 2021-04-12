@@ -28,7 +28,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > Incluir nome RA e foco de especialização de cada membro do grupo. Os grupos devem ter no máximo 5 integrantes e devem contar com pelo menos um aluno da área da saúde e um aluno de área afim à Computação (Ex.: Computação, Elétrica...)
 > |Nome  | RA | Especialização|
 > |--|--|--|
-> | Felipe Frazatto  | 146001  | Física |
+> | Felipe Frazatto  | 146001  | Engenharia Elétrica |
 > | João Pedro N. Gonçalves | 227991  | Farmácia |
 > | Pedro Augusto Lelis  | 33896 | Ciência da Computação |
 > | Renata Prôa  | 224637  | Matemática |
