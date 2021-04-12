@@ -30,7 +30,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |--|--|--|
 > | Felipe Frazatto  | 146001  | Engenharia Elétrica |
 > | João Pedro N. Gonçalves | 227991  | Farmácia |
-> | Pedro Augusto Lelis  | 33896 | Ciência da Computação |
+> | Pedro Lelis  | 233896 | Ciência da Computação |
 > | Renata Prôa  | 224637  | Matemática |
 
 
