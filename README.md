@@ -29,13 +29,14 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 > |Nome  | RA | Especialização|
 > |--|--|--|
 > | Felipe Frazatto  | 146001  | Física|
-> | João Pedro  | 227991  | Farmácia|
+> | João Pedro N. Gonçalves | 227991  | Farmácia|
 > | Pedro Lelis  | 123456  | XXX|
 > | Renata Prôa  | 224637  | Matemática|
 
 
 # Descrição Resumida do Projeto
-> Descrição do tema do projeto, incluindo motivação e contexto gerador.
+> A Esclerose Lateral Amiotrófica (ELA) é uma doença neurodegenerativa que afeta o sistema motor dos pacientes. Alterações progressivas e cumulativas na musculatura de todo corpo leva na maioria dos casos a uma eventual morte por complicações respiratórias de 3 a 5 anos após começarem tais sintomas. Apesar de diversas técnicas serem empregadas na identificação da ELA, o tempo médio que um paciente leva para receber o diagnóstico correto é de 12 a 18 meses. Um campo que ainda tem espaço para crescer e ainda está se consolidando nesse contexto da ELA, é o da aquisição e o processamento de imagens afim de se emitir um diagnóstico preciso ou obter biomarcadores da progressão e/ou aparecimento dos sintomas. Atualmente, técnincas baseadas na Ressonância Magnética (RM) são utilizadas para excluir outras patologias. Além disso, há poucos estudos que fazem uso do "data mining" para obtenção de características relevantes nas imagens, ou que cruzam dados de mais de uma técnica como por exemplo RM, DTI e MRI.
+Sendo assim, nosso grupo prõpoe analisar e minerear dados de imagens, principalmente RM de pacientes com ELA, atendidos regularmente no HC Unicamp. Concluída essa etapa, tentaremos correlacionar os dados clínicos disponíveis, se atentando à algumas características como hipótese clínica de ELA, diagnóstico defeinitivo e aparecimento e progressão dos sintomas. Tais dados serão usados como "timelines" que se possível, pretendemos correlacionar com as imagens para gerar novos biomarcadores para cada período relatado.
 > 
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
