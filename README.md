@@ -8,16 +8,16 @@
 - [x] Tabela Nome/RA
 - [ ] Organizar Notebooks
 - [ ] Organizar Artigos
-- [ ] Vídeo de apresentação
+- [x] Vídeo de apresentação
 
 ---------
 
 - [x] Apresentação
 - [x] Descrição
-- [ ] Perguntas de Pesquisa
-- [ ] Base de Dados
-- [ ] Metodologia
-- [ ] Ferramenta
+- [x] Perguntas de Pesquisa
+- [x] Base de Dados
+- [x] Metodologia
+- [x] Ferramenta
 - [ ] Cronograma
 
 
@@ -64,11 +64,11 @@ Divisão dos dataset em dois grupos: treino (80%) e teste (20%). Utilizar visão
 Correlacionar o conjunto de imagens e suas features com seus respectivos dados clínicos, visando a identificação de padrões.
 
 # Ferramentas
-• Jupyter Notebooks/Colab
-• Python
-• Scikit-Learn
-• Keras API
-• TensorFlow
+* Jupyter Notebooks/Colab
+* Python
+* Scikit-Learn
+* Keras API
+* TensorFlow
 
 # Cronograma
 > Proposta de cronograma. Procure estimar quantas semanas serão gastas para cada etapa do projeto.
