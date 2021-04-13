@@ -1,5 +1,5 @@
-# Projeto `<Correlação de Imagens e Fatores Clinicos em Paciente com Esclerose Lateral Amiotrófica (ELA)>`
-# Project `<MR Imaging and Clinical Factors Correlation on Amyotrophic Lateral Sclerosis (ALS) Patients>`
+# Projeto `<Correlação de dados de imagens de RM e dados clínicos em paciente com Esclerose Lateral Amiotrófica (ELA)>`
+# Project `<MR Imaging and Clinical Data Correlation on Amyotrophic Lateral Sclerosis (ALS) Patients>`
 
 ## ToDo List
 
