@@ -1,5 +1,5 @@
-# Projeto `<Título em Português>`
-# Project `<Title in English>`
+# Projeto `<Correlação de Imagens e Fatores Clinicos em Paciente com Esclerose Lateral Amiotrófica (ELA)>`
+# Project `<MR Imaging and Clinical Factors Correlation on Amyotrophic Lateral Sclerosis (ALS) Patients>`
 
 ## ToDo List
 
@@ -12,8 +12,8 @@
 
 ---------
 
-- [ ] Apresentação
-- [ ] Descrição
+- [x] Apresentação
+- [x] Descrição
 - [ ] Perguntas de Pesquisa
 - [ ] Base de Dados
 - [ ] Metodologia
@@ -41,16 +41,26 @@ Sendo assim, nosso grupo prõpoe analisar e minerear dados de imagens, principal
 > Link para vídeo de apresentação da proposta do projeto (máximo 3 minutos).
 
 # Perguntas de Pesquisa
-> Perguntas de pesquisa que o projeto pretende responder ou hipóteses a serem avaliadas, enunciadas de maneira objetiva e verificável.
+> Existe correlação entre a evolução de sintomas de um paciente diagnosticado com ELA e estruturas cerebrais?
+>
+> Existem biomarcadores que possam ser identificados com diferentes técnicas de imageamento (MRI, DTI)?
+>
+> A partir de micro e macro estruturas cerebrais, é possível analisar e predizer a sobrevida de um paciente, fornecendo um prognóstico?
 
 # Bases de Dados
-> Elencar bases de dados candidatas a serem utilizadas no projeto.
+> Imagens de MRI e DTI
+> * Fonte: HC da Unicamp
+> * Conteúdo: Mais de 400 imagens de DTI e MRI de pacientes diagnosticados com ELA e um numero correspondente de imagens de controle
+> 
+> Dados Clinicos
+> * Fonte: HC da Unicamp
+> * Conteúdo: ?
 
 # Metodologia
 > Proposta de metodologia incluindo especificação de quais técnicas pretende-se explorar, tais como: aprendizagem de máquina, análise de redes, análise estatística, ou integração de uma ou mais técnicas. Para a primeira entrega, descreva de maneira mais genérica que tipo de abordagem seu grupo pretende realizar.
 
 # Ferramentas
-> Ferramentas a serem utilizadas (com base na visão atual do grupo sobre o projeto).
+> Python 
 > ??Proteomics DB, UniProt, PDB??
 
 # Cronograma
