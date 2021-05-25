@@ -41,7 +41,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 
 ## 4. Bases de Dados
 
-Imagens de RM
+### Imagens de RM
 * Fonte: Ambulatório de Neurologia do HC da Unicamp
 * Conteúdo: 91 RM de pacientes diagnosticados com ELA e controles pareados por sexo e idade.
 
@@ -54,13 +54,13 @@ Em um primeiro momento, as imágens de ressonância foram segmentadas, ou seja, 
 - Gyri+SulciLH: espessura cortical de estruturas no hemisfério esquerdo
 - Gyri+SulciRH: espessura cortical de estruturas no hemisfério direito
 
-* Dados Genéticos
-- Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
-- Conteúdo: Informações sobre os subtipos genéticos de ELA.
+### Dados Genéticos
+* Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
+* Conteúdo: Informações sobre os subtipos genéticos de ELA.
 
 ### Integração entre Bases e Análise Exploratória
 
-Cada tabela foi importada e suas dimensões verificadas. Cada tabela possui 2 colunas (Unnamed 1 e 2) que são compostas apenas por dados faltantes de nomes e datas, que não serão necessários para esse projeto, sendo então completamente exclidas. A tabela 1 mostra a quantidade de linhas, colunas e quantidade de dados faltantes para cada conjunto de dados.
+Cada tabela foi importada e suas dimensões verificadas. Cada tabela possui 2 colunas (Unnamed 1 e 2) que são compostas apenas por dados faltantes de nomes e datas, que não serão necessários para esse projeto, sendo então completamente excluídas. A tabela 1 mostra a quantidade de linhas, colunas e quantidade de dados faltantes para cada conjunto de dados.
 
 Table 1: Sumário da dimensionalidade dos dados.
 | Data | Rows | Columns | Missing |
@@ -364,21 +364,20 @@ Tabela 13: Resultados do dataset Gyri+SulciRH comparando C9orf72 e VAPB. Todas a
 | S_temporal_inf | 0.000000 | -inf |
 | S_temporal_sup | 0.000000 | -inf |
 
-É importante salientar que o Teste T de Student não pode ser utilizado como seleção de features, já que ele não leva em consideração interações entre as variáveis, sendo necessário utilizar outros métodos como PCA ou LASSO, no entanto, a quantidade de features que possuem diferenças significativas entre controle e diagnosticado e entre tipos de ELA servem de forte indício que é possível discriminar os diversos grupos.
+É importante salientar que o Teste T de Student não pode ser utilizado como seleção de features, já que ele não leva em consideração interações entre as variáveis, sendo necessário utilizar outros métodos como PCA ou LASSO, no entanto, a quantidade de features que possuem diferenças significativas entre os grupos servem de forte indício que é possível discriminar os diversos grupos.
 
-Por fim, os três datasets são unidos em um único para que seja utilizado mais facilmente na seleção de feature quanto no treino e teste dos classificadores.
+Por fim, os três datasets são unidos em um único para que seja utilizado mais facilmente tanto na seleção de "feature" quanto no treino e teste dos classificadores.
  
     
 ## 5. Metodologia
 
 Para responder à pergunta de pesquisa, dois modelos serão elaborados para se aumentar a precisão do método. 
 
-Num primeiro momento, será estudada a diferença entre o grupo de controle e o de pacientes efetivamente diagnosticado com ELA, independente do tipo.
+No primeiro modelo será estudada a diferença entre o grupo de controle e o de pacientes efetivamente diagnosticados com ELA, independente do tipo.
 O modelo será uma regressão logística que levará como dados de entrada diversos dados de estruturas cerebrais e retornará uma variável booleana:
 Sim, o paciente possui ELA, ou Não, o paciente não possui nenhum tipo de ELA.
 
 O segundo modelo expandirá o primeiro utilizando uma regressão logística multinomial para categorizar pacientes entre os três tipos de ELA estudados nesse projeto: ELAs, VAPB e C9orf72.
-
 
 No entanto, antes de se treinar os modelos, deve-se realizar uma redução de dimensão, visto que o conjunto de dados sofre de alta dimensionalidade: várias colunas (175) e poucas linhas (91). Para tal, será utilizado o método LASSO (Least Absolute Shrinkage and Selection Operator) para realizar a seleção das Feature mais relevantes, reduzindo assim a dimensionalidado.
 
