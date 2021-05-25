@@ -371,16 +371,13 @@ Por fim, os três datasets são unidos em um único para que seja utilizado mais
     
 ## 5. Metodologia
 
-Para responder à pergunta de pesquisa, dois modelos serão elaborados para se aumentar a precisão do método. 
+Para responder à pergunta de pesquisa, dois modelos serão elaborados para se aumentar a precisão do método. Durante as nossas análises deverá ser realizada uma redução de dimensão, visto que o conjunto de dados sofre de alta dimensionalidade: várias colunas (175) e poucas linhas (91). Para tal, será utilizado o método LASSO (Least Absolute Shrinkage and Selection Operator) para realizar a seleção das "Features" mais relevantes, reduzindo assim a dimensionalidade. 
 
 No primeiro modelo será estudada a diferença entre o grupo de controle e o de pacientes efetivamente diagnosticados com ELA, independente do tipo.
 O modelo será uma regressão logística que levará como dados de entrada diversos dados de estruturas cerebrais e retornará uma variável booleana:
 Sim, o paciente possui ELA, ou Não, o paciente não possui nenhum tipo de ELA.
 
 O segundo modelo expandirá o primeiro utilizando uma regressão logística multinomial para categorizar pacientes entre os três tipos de ELA estudados nesse projeto: ELAs, VAPB e C9orf72.
-
-No entanto, antes de se treinar os modelos, deve-se realizar uma redução de dimensão, visto que o conjunto de dados sofre de alta dimensionalidade: várias colunas (175) e poucas linhas (91). Para tal, será utilizado o método LASSO (Least Absolute Shrinkage and Selection Operator) para realizar a seleção das Feature mais relevantes, reduzindo assim a dimensionalidado.
-
 
 ## 6. Ferramentas
 
