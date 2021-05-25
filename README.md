@@ -1,5 +1,5 @@
-# Projeto `<Correlação de dados de imagens de RM e dados clínicos em paciente com Esclerose Lateral Amiotrófica (ELA)>`
-# Project `<MR Imaging and Clinical Data Correlation on Amyotrophic Lateral Sclerosis (ALS) Patients>`
+# Projeto `<Correlação de dados de imagens de RM e dados genéticos em paciente com Esclerose Lateral Amiotrófica (ELA)>`
+# Project `<MRI Imaging and Genetic Data Correlation on Amyotrophic Lateral Sclerosis (ALS) Patients>`
 
 
 ## Indice
@@ -54,9 +54,9 @@ Em um primeiro momento, as imágens de ressonância foram segmentadas, ou seja, 
 - Gyri+SulciLH: espessura cortical de estruturas no hemisfério esquerdo
 - Gyri+SulciRH: espessura cortical de estruturas no hemisfério direito
 
-* Dados Genéticos *
-* Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
-* Conteúdo: Informações sobre os subtipos genéticos de ELA.
+* Dados Genéticos
+- Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
+- Conteúdo: Informações sobre os subtipos genéticos de ELA.
 
 ### Integração entre Bases e Análise Exploratória
 
