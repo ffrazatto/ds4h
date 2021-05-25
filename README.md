@@ -373,7 +373,7 @@ Por fim, os três datasets são unidos em um único para que seja utilizado mais
 Para responder à pergunta de pesquisa, dois modelos serão elaborados para se aumentar a precisão do método. 
 
 Num primeiro momento, será estudada a diferença entre o grupo de controle e o de pacientes efetivamente diagnosticado com ELA, independente do tipo.
-O modelo será uma regressão logística que levará como dados de entrada diversos dados de estruturas cerebráis e retornará uma variável booleana:
+O modelo será uma regressão logística que levará como dados de entrada diversos dados de estruturas cerebrais e retornará uma variável booleana:
 Sim, o paciente possui ELA, ou Não, o paciente não possui nenhum tipo de ELA.
 
 O segundo modelo expandirá o primeiro utilizando uma regressão logística multinomial para categorizar pacientes entre os três tipos de ELA estudados nesse projeto: ELAs, VAPB e C9orf72.
