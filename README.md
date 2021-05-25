@@ -37,7 +37,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 
 ## 3. Perguntas de Pesquisa
 
-* A partir de informações sobre o Volume, Expessura média e indíces de difusão de substratos anatômicos cerebrais, é possível diferenciar os subtipos de ELA?
+* A partir de informações sobre o volume, expessura média, valores de difusão e a anisotropia fracionada dos diversos substratos anatômicos cerebrais, é possível diferenciar os subtipos de ELA?
 
 ## 4. Bases de Dados
 
