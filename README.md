@@ -44,10 +44,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 Imagens de RM
 * Fonte: Ambulatório de Neurologia do HC da Unicamp
 * Conteúdo: 91 RM de pacientes diagnosticados com ELA e controles pareados por sexo e idade.
-> 
-Dados Genéticos
-* Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
-* Conteúdo: Informações sobre os subtipos genéticos de ELA.
+
 
 Em um primeiro momento, as imágens de ressonância foram segmentadas, ou seja, cada estrutura cerebral é identificada, e em seguida para cada região são calculadas diversas metricas, dentre elas o volume, rugosidade, profundidade de sulcos etc.
 
@@ -56,6 +53,10 @@ Em um primeiro momento, as imágens de ressonância foram segmentadas, ou seja, 
 - Volume: volumes de diversas regiões e estruturas
 - Gyri+SulciLH: espessura cortical de estruturas no hemisfério esquerdo
 - Gyri+SulciRH: espessura cortical de estruturas no hemisfério direito
+
+* Dados Genéticos *
+* Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
+* Conteúdo: Informações sobre os subtipos genéticos de ELA.
 
 ### Integração entre Bases e Análise Exploratória
 
