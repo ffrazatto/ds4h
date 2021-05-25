@@ -38,7 +38,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 
 ## 3. Perguntas de Pesquisa
 
-* A partir de informações sobre o volume, expessura média, valores de difusão e a anisotropia fracionada dos diversos substratos anatômicos cerebrais, é possível diferenciar os subtipos de ELA?
+* A partir de informações sobre o volume, expessura média, medidas de difusão e a anisotropia fracionada dos diversos substratos anatômicos cerebrais, é possível diferenciar os subtipos de ELA?
 
 ## 4. Bases de Dados
 
@@ -49,7 +49,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 
 Em um primeiro momento, as imágens de ressonância foram segmentadas, ou seja, cada estrutura cerebral é identificada, e em seguida para cada região são calculadas diversas metricas, dentre elas o volume, rugosidade, profundidade de sulcos etc.
 
-> A base de dados utilizada é uma tabela composta por três tabelas (.xlsx) conténdo diversas quantidades de volume ($mm^3$) e espessura (mm) das diversas estruturas cerebrais separadas por hemisférios.
+> A base de dados utilizada é uma tabela composta por três tabelas (.xlsx) conténdo diversas quantidades de volume (mm^3) e espessura (mm) das diversas estruturas cerebrais separadas por hemisférios.
 
 - Volume: volumes de diversas regiões e estruturas
 - Gyri+SulciLH: espessura cortical de estruturas no hemisfério esquerdo
