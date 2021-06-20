@@ -33,7 +33,6 @@ Apesar de diversas técnicas serem empregadas na identificação da ELA, o tempo
 
 Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx cerebral (matéria cinzenta) aplicando a técnica de morfometria baseada em "voxel" (pixel 3D) selecionando os dados sobre o volume e a espessura cortical e analisar dados de estruturas axonais (matéria branca) a partir da técnica de imagem de tensor de difusão "DTI" em controles e pacientes diagnosticados com ELAs e ELAf atendidos regularmente no HC Unicamp. Do grupo dos ELAf foram selecionados aqueles que possuíam maior representatividade (Casos de C9orf72 e VAPB) e também foram utilizadas informações sobre a idade, sexo dos pacientes e controles.
 
-
 > Um breve vídeo de apresentação do projeto está disponível no Google Drive pelo link a seguir: [Vídeo de Apresentação](https://drive.google.com/file/d/14wwlC784iaPo-pFCyMjoqUAnqoewHfpT/view?usp=sharing)
 
 ## 3. Perguntas de Pesquisa
@@ -45,6 +44,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 ### Imagens de RM
 * Fonte: Ambulatório de Neurologia do HC da Unicamp
 * Conteúdo: 91 RM de pacientes diagnosticados com ELA e controles pareados por sexo e idade.
+* Para a extração de features de volume e expressura foram utilizadas todas as 91 amostras, porém apenas 88 delas foram utilizadas para extração de informações difisuvidade média (MD) e anisotropia fracionada (FA).
 
 
 Em um primeiro momento, as imágens de ressonância foram segmentadas, ou seja, cada estrutura cerebral é identificada, e em seguida para cada região são calculadas diversas metricas, dentre elas o volume, rugosidade, profundidade de sulcos etc.
