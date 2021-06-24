@@ -386,8 +386,22 @@ Para classificar os sujeitos entre saudáveis e pacientes de ELA, treinamos trê
 
 Previamente ao treinamento dos modelos, as features tais que para ao menos um sujeito não havia dados foram removidas da análise. A escolha de remover tais features foi feita com base no fato de que dispunhamos de um excesso de features em comparação com o número de sujeitos (alta dimensionalidade). Também foi feita uma análise da variância das features e foram excluídas as features com variância muito próxima de zero (Near Zero Variance). Em seguida, foi feita uma Análise de Componentes Principais (PCA) e os dados foram divididos nos conjuntos de Treino, Validação e Teste (60%, 20% e 20% respectivamete). Por fim, foi feita uma normalização das features (método Standard Scaler da biblioteca Scikit-Learn do Python) e o treinamento dos três modelos. Nos modelos de regressão logistica foi feita regularização através de um LASSO (Least Absolute Shrinkage and Selection Operator). Para todos os modelos foi calculada a matriz de confusão, a acurácia e foi feito um K-Fold Cross Validation com K = 100.
 
+## 6. Resultados
 
-## 6. Ferramentas
+O nosso estudo mostrou que é possível a construção de um classificador de ELA numa causuística que incluia pacientes com dois tipos de ELAf, casos de ELAs e controles saudáveis. Também foi possível construir um classificar dos subtipos de ELA com certa acurácia.
+> Para o classificador de ELA, o modelo que apresentou os melhores resultados foi o de regressão logística, com acurácia de 77% e cross validation score de 0.84.
+> Já o classificador de subtipos de ELA, que utiliza o algoritmo de random forest, obteve uma acurácia de 74% e cross validation score de 0.79.
+
+## 7. Discussão
+
+Apesar da alta sensibilidade dos dois modelos (92% e 100%) o primeiro modelo possui baixa especificidade (28%) e o segundo sofre com baixa acurácia de dois subtipos (82% esporadica, 67% c9orf72 e 57% vapb). Atribuímos isso a uma alta dimensionalidade do dados, que também impacta negativamente o treinamento dos modelos, causando overfitting na etapa de treinamento e baixissimas acurácias nos conjuntos de validaçao e teste.
+O uso da tecnicas de feature selection (como o near zero variance,  pca e LASSO) ajudam a minimizar esse problema, mas o numero baixo de obseravações, especialmente quando divididas em subtipos de ELA, ainda prejudicam a elaboração de modelos mais robustos.
+
+## 8. Conclusão
+
+Os resultados são promissores, porém ambos os modelos sofrem com a baixa quantidade de observações e alta dimensionalidade. Acreditamos que esse trabalho pode ser encarado como um pipeline para a elaboração de classificadores para ELA, podendo ser aprimorado conforme o banco de dados adquire novas entradas.
+ 
+## 9. Ferramentas
 
 * Freesurfer
 * Acapuco
@@ -396,12 +410,12 @@ Previamente ao treinamento dos modelos, as features tais que para ao menos um su
 * Python
 * Scikit-Learn
 
-## 7. Cronograma
+## 10. Cronograma
 > A primeira etapa seria a etapa de análise das imagens. Dado que ainda não tivemos contato com as imagens é difícil estimar quanto tempo levará. Mas achamos que levaremos em torno de 8 semanas para realizar isso.
 > A correlação com os dados clínicos pode levar em torno de 4 semanas caso haja necessidade de tabularmos.
 > A escrita do projeto final e ocorrerá concomitantemente.
 
-## 8. Estrutura de Diretórios
+## 11. Estrutura de Diretórios
 
 ```shell
 ds4h
