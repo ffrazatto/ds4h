@@ -36,7 +36,6 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 > A seguir está um link para um vídeo expositivo do projeto: [Vídeo da Apresentação Final](https://drive.google.com/file/d/1B7IrWRsjD3mj0n888kyfIzax0t_VchdH/view?usp=sharing)
 
 
-
 ## 3. Perguntas de Pesquisa
 
 * A partir de informações sobre o volume, expessura média, medidas de difusão e a anisotropia fracionada dos diversos substratos anatômicos cerebrais, é possível diferenciar os subtipos de ELA?
@@ -48,27 +47,12 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 * Conteúdo: 91 RM de pacientes diagnosticados com ELA e controles pareados por sexo e idade.
 * Para a extração de features de volume e expressura foram utilizadas todas as 91 amostras, porém apenas 87 delas foram utilizadas para extração de informações difisuvidade média (MD) e anisotropia fracionada (FA).
 
-
 > Será utilizado das imagens de T1 as métricas de volume, rugosidade, profundidade de sulcos. Já para análise das imagens de DTI serão usadas as medidas de anisotropia Fracional (FA), difusividade média (MD), difusividade Axial (AD) e difusividade radial (RD).
-
-> As informaçãos extraídas das imagens geraram tabelas composta por três tabelas (.xlsx) conténdo diversas quantidades de volume (mm^3) e espessura (mm) das diversas estruturas cerebrais separadas por hemisférios.
-
-- Volume: volumes de diversas regiões e estruturas
-- Gyri+SulciLH: espessura cortical de estruturas no hemisfério esquerdo
-- Gyri+SulciRH: espessura cortical de estruturas no hemisfério direito
-- FA
-- L1
-- L2
-- L3
+> Os dados de análise de significância das regiões cerebrais conforme os parâmetros descritos acima, ou seja, quais features são releventes para construção do nosso classificador estão em data/processed desse repositório.
 
 ### Dados Genéticos
 * Fonte: Dados genéticos obtidos através do pipeline de análise empregado no diagnóstico genético e molecular dos pacientes do Ambulatório de Neurologia do HC da Unicamp.
 * Conteúdo: Informações sobre os subtipos genéticos de ELA.
-
-
-É importante salientar que o Teste T de Student não pode ser utilizado como seleção de features, já que ele não leva em consideração interações entre as variáveis, sendo necessário utilizar outros métodos como PCA ou LASSO, no entanto, a quantidade de features que possuem diferenças significativas entre os grupos servem de forte indício que é possível discriminar os diversos grupos.
-
-Por fim, os três datasets são unidos em um único para que seja utilizado mais facilmente tanto na seleção de "feature" quanto no treino e teste dos classificadores.
    
 ## 5. Metodologia
 
@@ -84,6 +68,7 @@ Previamente ao treinamento dos modelos, as features tais que para ao menos um su
 
 O nosso estudo mostrou que é possível a construção de um classificador de ELA numa causuística que incluia pacientes com dois tipos de ELAf, casos de ELAs e controles saudáveis. Também foi possível construir um classificar dos subtipos de ELA com certa acurácia.
 > Para o classificador de ELA, o modelo que apresentou os melhores resultados foi o de regressão logística, com acurácia de 77% e cross validation score de 0.84.
+
 > Já o classificador de subtipos de ELA, que utiliza o algoritmo de random forest, obteve uma acurácia de 74% e cross validation score de 0.79.
 
 Tabela 14: somatória das features que tiveram algum significado estatístico quando comparados incialmente pacientes com controles e quando comparamos os subtipos de ELA.
@@ -112,6 +97,7 @@ Comparação: Subtipos de ELA
 ## 7. Discussão
 
 Apesar da alta sensibilidade dos dois modelos (92% e 100%) o primeiro modelo possui baixa especificidade (28%) e o segundo sofre com baixa acurácia de dois subtipos (82% esporadica, 67% c9orf72 e 57% vapb). Atribuímos isso a uma alta dimensionalidade do dados, que também impacta negativamente o treinamento dos modelos, causando overfitting na etapa de treinamento e baixissimas acurácias nos conjuntos de validaçao e teste.
+É importante salientar que o Teste T de Student não pode ser utilizado como seleção de features, já que ele não leva em consideração interações entre as variáveis, sendo necessário utilizar outros métodos como PCA ou LASSO, no entanto, a quantidade de features que possuem diferenças significativas entre os grupos servem de forte indício que é possível discriminar os diversos grupos.
 O uso da tecnicas de feature selection (como o near zero variance,  pca e LASSO) ajudam a minimizar esse problema, mas o numero baixo de obseravações, especialmente quando divididas em subtipos de ELA, ainda prejudicam a elaboração de modelos mais robustos.
 
 ## 8. Conclusão
