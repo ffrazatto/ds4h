@@ -29,7 +29,7 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 
 A Esclerose Lateral Amiotrófica (ELA) é uma doença neurodegenerativa que afeta o sistema motor dos pacientes. Alterações progressivas e cumulativas na musculatura de todo corpo leva na maioria dos casos a uma eventual morte por complicações respiratórias de 3 a 5 anos após começarem tais sintomas. Do ponto de vista genético 90% dos casos de ELA são esporádicos (ELAs) e apenas 10% dos casos são familiares (ELAf), porém aproximadamente 70% dos casos de ELAf já possuem um gene candidato, contra apenas 10% dos casos de ELAs. Os genes mais frequentes encontrados tanto em casos de ELAf quanto em casos de ELAs são C9orf72, FUS, TARDBP e SOD1.
 
-Apesar de diversas técnicas serem empregadas na identificação da ELA, o tempo médio que um paciente leva para receber o diagnóstico correto é de 12 a 18 meses. Na prática os pacientes com ELA são submetidos a Ressonância Magnética (RM) apenas com a finalidade de se excluir outras patologias, mas talvez seja possível extrair informações dessas imagens que possam não somente classificar os casos de ELA, como também identificar os substratos anatômicos cerebrais que subdividem os pacientes, tendo em vista essa variabilidade genética.
+Apesar de diversas técnicas serem empregadas na identificação da ELA, o tempo médio que um paciente leva para receber o diagnóstico correto é de 12 a 18 meses. Na prática os pacientes com ELA são submetidos a Ressonância Magnética (RM) apenas com a finalidade de se excluir outras patologias, mas talvez seja possível extrair informações dessas imagens, "features", que possam não somente classificar os casos de ELA, como também identificar os substratos anatômicos cerebrais que subdividem os pacientes, tendo em vista essa variabilidade genética. Durante esse trabalho será tratado como features, todos números ou medidas obtidas das imagens de RM.
 
 Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx cerebral (matéria cinzenta) aplicando a técnica de morfometria baseada em "voxel" (pixel 3D) selecionando os dados sobre o volume e a espessura cortical obtidos a partir das imagens de T1 ponderadas e analisar dados de estruturas axonais (matéria branca) a partir da técnica de imagem de tensor de difusão "DTI" em controles e pacientes diagnosticados com ELAs e ELAf atendidos regularmente no HC Unicamp. Do grupo dos ELAf foram selecionados aqueles que possuíam maior representatividade (Casos de C9orf72 e VAPB) e também foram utilizadas informações sobre a idade, sexo dos pacientes e controles.
 
@@ -49,7 +49,7 @@ Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx c
 * Para a extração de features de volume e expressura foram utilizadas todas as 91 amostras, porém apenas 87 delas foram utilizadas para extração de informações difisuvidade média (MD) e anisotropia fracionada (FA).
 
 
-> Será utilizado das imagnes de T1 as métricas de volume, rugosidade, profundidade de sulcos. Já para análise das imagens de DTI serão usadas as medidas de anisotropia Fracional (FA), difusividade média (MD), difusividade Axial (AD) e difusividade radial (RD).
+> Será utilizado das imagens de T1 as métricas de volume, rugosidade, profundidade de sulcos. Já para análise das imagens de DTI serão usadas as medidas de anisotropia Fracional (FA), difusividade média (MD), difusividade Axial (AD) e difusividade radial (RD).
 
 > As informaçãos extraídas das imagens geraram tabelas composta por três tabelas (.xlsx) conténdo diversas quantidades de volume (mm^3) e espessura (mm) das diversas estruturas cerebrais separadas por hemisférios.
 
@@ -374,8 +374,7 @@ Tabela 13: Resultados do dataset Gyri+SulciRH comparando C9orf72 e VAPB. Todas a
 É importante salientar que o Teste T de Student não pode ser utilizado como seleção de features, já que ele não leva em consideração interações entre as variáveis, sendo necessário utilizar outros métodos como PCA ou LASSO, no entanto, a quantidade de features que possuem diferenças significativas entre os grupos servem de forte indício que é possível discriminar os diversos grupos.
 
 Por fim, os três datasets são unidos em um único para que seja utilizado mais facilmente tanto na seleção de "feature" quanto no treino e teste dos classificadores.
- 
-    
+   
 ## 5. Metodologia
 
 As imagens de T1 foram primeiramente convertidas do formato DICOM para o formato NIfTI com o software 'Dicom2Nii', e em seguida processadas com o software Freesurfer. O Freesurfer primeiramente faz o Skull Stripping, isto é, a remoção da caixa craniana, identifica as principais regiões do cérebro (Volumetric Labeling), normalização da intensidade e a segmentação da substância branca. Em seguida a imagem é registrada num espaço padrão e um atlas é aplicado para que possam ser identificados os giros (parcelamento). Como resultado deste processo de segmentação e percelamento automáticos, obtivemos as medidas de volume para todas as 113 regiões identificadas. 
@@ -391,6 +390,29 @@ Previamente ao treinamento dos modelos, as features tais que para ao menos um su
 O nosso estudo mostrou que é possível a construção de um classificador de ELA numa causuística que incluia pacientes com dois tipos de ELAf, casos de ELAs e controles saudáveis. Também foi possível construir um classificar dos subtipos de ELA com certa acurácia.
 > Para o classificador de ELA, o modelo que apresentou os melhores resultados foi o de regressão logística, com acurácia de 77% e cross validation score de 0.84.
 > Já o classificador de subtipos de ELA, que utiliza o algoritmo de random forest, obteve uma acurácia de 74% e cross validation score de 0.79.
+
+Tabela 14: somatória das features que tiveram algum significado estatístico quando comparados incialmente pacientes com controles e quando comparamos os subtipos de ELA.
+
+Comparação: Saudável vs ELA
+| Dataset | numberFeatures |
+| --- | --- |
+| t1 | 55 |
+| dti | 228 |
+| all | 283 |
+
+
+Comparação: Subtipos de ELA
+| Dataset | Alvo1 | Alvo2 | numeroFeatures |
+| --- | --- | --- | --- |
+| t1 | ELAs | c90rf72 | 47 |
+| t1 | ELAs | vapb | 11 |
+| t1 | c9orf72 | vapb | 47 |
+| dti | ELAs | c90rf72 | 304 |
+| dti | ELAs | vapb | 185 |
+| dti | c9orf72 | vapb | 304 |
+| all | ELAs | c90rf72 | 351 |
+| all | ELAs | vapb | 196 |
+| all | c9orf72 | vapb | 351 |
 
 ## 7. Discussão
 
