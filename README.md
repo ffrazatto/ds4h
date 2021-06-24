@@ -21,9 +21,9 @@ O presente projeto foi originado no contexto das atividades da disciplina de pó
 |--|--|--|
 | Felipe Frazatto | 146001 | Engenharia Elétrica |
 | João Pedro N. Gonçalves | 227991 | Farmácia |
-| Pedro Lelis | 233896 | Ciência da Computação |
 | Renata Prôa | 224637 | Matemática |
 
+> Um breve vídeo de apresentação do projeto está disponível no Google Drive pelo link a seguir: [Vídeo da Proposta](https://drive.google.com/file/d/14wwlC784iaPo-pFCyMjoqUAnqoewHfpT/view?usp=sharing)
 
 ## 2. Descrição do Projeto
 
@@ -33,7 +33,9 @@ Apesar de diversas técnicas serem empregadas na identificação da ELA, o tempo
 
 Sendo assim, nosso grupo prõpoe analisar divergências anatômicas do cortéx cerebral (matéria cinzenta) aplicando a técnica de morfometria baseada em "voxel" (pixel 3D) selecionando os dados sobre o volume e a espessura cortical e analisar dados de estruturas axonais (matéria branca) a partir da técnica de imagem de tensor de difusão "DTI" em controles e pacientes diagnosticados com ELAs e ELAf atendidos regularmente no HC Unicamp. Do grupo dos ELAf foram selecionados aqueles que possuíam maior representatividade (Casos de C9orf72 e VAPB) e também foram utilizadas informações sobre a idade, sexo dos pacientes e controles.
 
-> Um breve vídeo de apresentação do projeto está disponível no Google Drive pelo link a seguir: [Vídeo de Apresentação](https://drive.google.com/file/d/14wwlC784iaPo-pFCyMjoqUAnqoewHfpT/view?usp=sharing)
+> A seguir está um link para um vídeo expositivo do projeto: [Vídeo da Apresentação Final](https://drive.google.com/file/d/1B7IrWRsjD3mj0n888kyfIzax0t_VchdH/view?usp=sharing)
+
+
 
 ## 3. Perguntas de Pesquisa
 
