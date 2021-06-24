@@ -68,7 +68,9 @@ Previamente ao treinamento dos modelos, as features tais que para ao menos um su
 
 O nosso estudo mostrou que é possível a construção de um classificador de ELA numa causuística que incluia pacientes com dois tipos de ELAf, casos de ELAs e controles saudáveis. Também foi possível construir um classificar dos subtipos de ELA com certa acurácia.
 > Para o classificador de ELA, o modelo que apresentou os melhores resultados foi o de regressão logística, com acurácia de 77% e cross validation score de 0.84.
+[Matriz de Confusão do Modelo de Regressão Logística DTI + T1](assets/1.png)
 > Já o classificador de subtipos de ELA, que utiliza o algoritmo de random forest, obteve uma acurácia de 74% e cross validation score de 0.79.
+[Matriz de Confusão do Modelo Random Forest DTI + T1](assets/2.png)
 
 Tabela 14: somatória das features que tiveram algum significado estatístico quando comparados incialmente pacientes com controles e quando comparamos os subtipos de ELA.
 
